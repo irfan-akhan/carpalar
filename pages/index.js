@@ -2,6 +2,7 @@ import { Container } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
 import About from "../components/About";
+import Explore from "../components/Explore";
 import HeroBanner from "../components/HeroBanner";
 import Howitworks from "../components/Howitworks";
 import InfoSection from "../components/InfoSection";
@@ -16,6 +17,7 @@ export default function Home() {
 			<Search />
 			<InfoSection />
 			<Howitworks />
+			<Explore />
 			<About />
 			<Reviews />
 		</>

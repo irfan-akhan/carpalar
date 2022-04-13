@@ -13,13 +13,20 @@ export default function About() {
 			<Heading
 				as="h3"
 				size="2xl"
-				mb="10"
+				mb="3"
 				textTransform="uppercase"
 				textAlign="center"
 			>
 				About carpalar
 			</Heading>
-			<Text fontSize="large" color="gray.600" px="20%">
+			<div
+				style={{
+					width: "200px",
+					padding: "1.4px",
+					backgroundColor: "#acb7fb",
+				}}
+			></div>
+			<Text mt="10" fontSize="large" color="gray.600" px="20%">
 				Carpalar is a genuine and notable digital car leasing brand that
 				aims at ensuring ownership of automobiles in the most convenient
 				way. Simply refer to Carpalar as a financial technology brand

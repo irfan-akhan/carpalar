@@ -11,6 +11,7 @@ export default function Howitworks() {
 			p="5%"
 			color="white"
 			bg="black"
+			id="howitworks"
 		>
 			<Heading as="h5" textTransform="capitalize" size="2xl">
 				How it works
@@ -33,13 +34,12 @@ export default function Howitworks() {
 						alt="salary"
 					/>
 					<Flex
-						mt="10"
-						height="40vh"
 						borderRadius="5"
 						p="10"
 						bg="white"
 						flexDir="column"
 						alignItems="center"
+						height="50vh"
 					>
 						<Image
 							mb="40"
@@ -63,17 +63,16 @@ export default function Howitworks() {
 						alt="salary"
 					/>
 					<Flex
-						mt="10"
-						height="40vh"
-						bg="white"
 						borderRadius="5"
 						p="10"
+						bg="white"
+						minH="50vh"
 						flexDir="column"
 						alignItems="center"
 					>
 						<Image
 							mb="40"
-							src="/salary.png"
+							src="/partner.png"
 							height={120}
 							width={120}
 							alt="salary"
@@ -82,7 +81,7 @@ export default function Howitworks() {
 							We match your car with an honest and competent
 							driver
 						</Text>
-					</Flex>{" "}
+					</Flex>
 				</Box>
 				<Box width="25%">
 					<Image
@@ -93,19 +92,19 @@ export default function Howitworks() {
 						alt="salary"
 					/>
 					<Flex
-						mt="10"
-						height="40vh"
-						bg="white"
 						borderRadius="5"
 						p="10"
+						bg="white"
 						flexDir="column"
 						alignItems="center"
+						minH="50vh"
 					>
 						<Image
-							src="/earn-money.png"
+							mb="40"
+							src="/partner.png"
 							height={120}
 							width={120}
-							alt="money"
+							alt="salary"
 						/>
 						<Text mt="10">Earn weekly with no hidden charges.</Text>
 					</Flex>

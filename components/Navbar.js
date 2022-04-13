@@ -18,11 +18,11 @@ export default function Navbar() {
 					</li>
 
 					<li className={styles.list}>
-						<Link href="/">About us </Link>
+						<Link href="/aboutus">About us </Link>
 					</li>
 
 					<li className={styles.list}>
-						<Link href="/">How it works</Link>
+						<Link href="#howitworks">How it works</Link>
 					</li>
 
 					<li className={styles.list}>

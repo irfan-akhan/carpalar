@@ -8,6 +8,8 @@ export default function InfoSection() {
 			display="flex"
 			justifyContent="space-between"
 			alignItems="center"
+			px="100"
+			minH="110vh"
 			// width="80vw"
 		>
 			<Box maxW="45vw" px="50">
@@ -31,11 +33,12 @@ export default function InfoSection() {
 				</Text>
 			</Box>
 			<Box>
-				<Flex px="50" maxW="45vw">
+				<Flex px="50" flexWrap="wrap">
 					<Box
 						maxW="45%"
 						mr="5"
 						boxShadow="lg"
+						mb="5"
 						padding="5"
 						borderRadius="10"
 					>
@@ -55,7 +58,79 @@ export default function InfoSection() {
 							Flexible weekly payment plan
 						</Text>
 					</Box>
-					<Box maxW="45%" mr="5">
+					<Box
+						maxW="45%"
+						mr="5"
+						boxShadow="lg"
+						mb="5"
+						padding="5"
+						borderRadius="10"
+					>
+						<Image
+							src="/payment-method.png"
+							width={120}
+							height={120}
+							alt="payment method"
+						/>
+						<Text
+							textAlign="center"
+							my="5"
+							color="white"
+							as="h4"
+							bgColor="blue"
+						>
+							Flexible weekly payment plan
+						</Text>
+					</Box>
+					<Box
+						maxW="45%"
+						mr="5"
+						boxShadow="lg"
+						mb="5"
+						padding="5"
+						borderRadius="10"
+					>
+						<Image
+							src="/payment-method.png"
+							width={120}
+							height={120}
+							alt="payment method"
+						/>
+						<Text
+							textAlign="center"
+							my="5"
+							color="white"
+							as="h4"
+							bgColor="blue"
+						>
+							Flexible weekly payment plan
+						</Text>
+					</Box>
+					<Box
+						maxW="45%"
+						mr="5"
+						boxShadow="lg"
+						mb="5"
+						padding="5"
+						borderRadius="10"
+					>
+						<Image
+							src="/payment-method.png"
+							width={120}
+							height={120}
+							alt="payment method"
+						/>
+						<Text
+							textAlign="center"
+							my="5"
+							color="white"
+							as="h4"
+							bgColor="blue"
+						>
+							Flexible weekly payment plan
+						</Text>
+					</Box>
+					{/* <Box boxShadow="lg" mb="5" maxW="45%" mr="5">
 						<Image
 							src="/salary.png"
 							width={120}
@@ -72,9 +147,8 @@ export default function InfoSection() {
 							Affordable & Low Deposit
 						</Text>
 					</Box>
-				</Flex>
-				<Flex px="50" maxW="45vw">
-					<Box maxW="45%" mr="5">
+
+					<Box boxShadow="lg" mb="5" mr="5">
 						<Image
 							src="/interest.png"
 							width={120}
@@ -91,7 +165,7 @@ export default function InfoSection() {
 							No interest rate
 						</Text>
 					</Box>
-					<Box maxW="45%" mr="5">
+					<Box boxShadow="lg" mb="5" mr="5">
 						<Image
 							src="/deal.png"
 							width={120}
@@ -107,7 +181,7 @@ export default function InfoSection() {
 						>
 							Access to a Car
 						</Text>
-					</Box>
+					</Box> */}
 				</Flex>
 			</Box>
 		</Box>

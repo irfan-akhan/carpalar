@@ -1,5 +1,6 @@
 import React from "react";
 import ContactStrip from "./ContactStrip";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
@@ -8,6 +9,7 @@ export default function Layout({ children }) {
 			<ContactStrip />
 			<Navbar />
 			{children}
+			<Footer />
 		</div>
 	);
 }
