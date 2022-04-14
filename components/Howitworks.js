@@ -1,7 +1,9 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
 export default function Howitworks() {
+	const [notSmallerScreen] = useMediaQuery("(min-width:768px)");
+
 	return (
 		<Box
 			my="5%"
@@ -16,16 +18,29 @@ export default function Howitworks() {
 			<Heading as="h5" textTransform="capitalize" size="2xl">
 				How it works
 			</Heading>
-			<Text mt="2" mb="5%">
-				3 simple steps with no hassle
+			<Text
+				mt="2"
+				my="50"
+				fontSize={notSmallerScreen ? "20" : "20"}
+				textAlign="center"
+			>
+				Our Drive-to-own service is based on instalment payment plan
+				which allows qualified driver to own a car without paying the
+				whole value at once. This requires a very low deposit payment
+				with the payment plan spread over 12-24 months without any
+				interest rate.
 			</Text>
 			<Flex
 				maxW="70vw"
 				color="black"
 				justifyContent="space-between"
 				textAlign="center"
+				flexDir={notSmallerScreen ? "row" : "column"}
 			>
-				<Box width="25%">
+				<Box
+					width={notSmallerScreen ? "25%" : "100%"}
+					mb={notSmallerScreen ? "inherit" : "20"}
+				>
 					<Image
 						mb="40"
 						src="/number-1.png"
@@ -35,11 +50,11 @@ export default function Howitworks() {
 					/>
 					<Flex
 						borderRadius="5"
-						p="10"
+						p="5"
 						bg="white"
 						flexDir="column"
 						alignItems="center"
-						height="50vh"
+						height={notSmallerScreen ? "50vh" : "35vh"}
 					>
 						<Image
 							mb="40"
@@ -48,13 +63,15 @@ export default function Howitworks() {
 							width={120}
 							alt="salary"
 						/>
-						<Text mt="10">
-							Partner with your proposed vehicle Appropriate
-							documentation necessary
+						<Text fontWeight="medium" fontSize="large" mt="10">
+							Fill in the application form
 						</Text>
 					</Flex>
 				</Box>
-				<Box width="25%">
+				<Box
+					width={notSmallerScreen ? "25%" : "100%"}
+					mb={notSmallerScreen ? "inherit" : "20"}
+				>
 					<Image
 						mb="40"
 						src="/number-2.png"
@@ -66,8 +83,8 @@ export default function Howitworks() {
 						borderRadius="5"
 						p="10"
 						bg="white"
-						minH="50vh"
 						flexDir="column"
+						minH={notSmallerScreen ? "50vh" : "35vh"}
 						alignItems="center"
 					>
 						<Image
@@ -77,13 +94,15 @@ export default function Howitworks() {
 							width={120}
 							alt="salary"
 						/>
-						<Text mt="10">
-							We match your car with an honest and competent
-							driver
+						<Text fontWeight="medium" mt="10">
+							Get Assessed and verified
 						</Text>
 					</Flex>
 				</Box>
-				<Box width="25%">
+				<Box
+					width={notSmallerScreen ? "25%" : "100%"}
+					mb={notSmallerScreen ? "inherit" : "20"}
+				>
 					<Image
 						mb="40"
 						src="/number-3.png"
@@ -97,7 +116,7 @@ export default function Howitworks() {
 						bg="white"
 						flexDir="column"
 						alignItems="center"
-						minH="50vh"
+						minH={notSmallerScreen ? "50vh" : "35vh"}
 					>
 						<Image
 							mb="40"
@@ -106,7 +125,9 @@ export default function Howitworks() {
 							width={120}
 							alt="salary"
 						/>
-						<Text mt="10">Earn weekly with no hidden charges.</Text>
+						<Text fontWeight="medium" mt="10">
+							Pay & Pick up your car!
+						</Text>
 					</Flex>
 				</Box>
 			</Flex>

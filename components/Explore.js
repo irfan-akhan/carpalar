@@ -1,8 +1,16 @@
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import {
+	Box,
+	Button,
+	Flex,
+	Heading,
+	Text,
+	useMediaQuery,
+} from "@chakra-ui/react";
 import React from "react";
 import ExploreCard from "./ExploreCard";
 
 export default function Explore() {
+	const [notSmallerScreen] = useMediaQuery("(min-width:768px)");
 	return (
 		<Box bgColor="black" pb="20">
 			<Flex
@@ -23,7 +31,11 @@ export default function Explore() {
 						backgroundColor: "#acb7fb",
 					}}
 				></div>
-				<Text px="20%" py="5" fontSize="20">
+				<Text
+					px={notSmallerScreen ? "20%" : "10%"}
+					py="5"
+					fontSize="20"
+				>
 					With Carpalar, a variety of luxurious cars are assured! Our
 					customers enjoy the opportunity to select from a wide range
 					of car brands, sizes, colors and shapes. Our cars and buses

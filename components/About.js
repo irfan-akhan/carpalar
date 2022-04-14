@@ -1,19 +1,23 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import React from "react";
 
 export default function About() {
+	const [notSmallerScreen] = useMediaQuery("(min-width:768px)");
+
 	return (
 		<Flex
 			textAlign="center"
 			flexDir="column"
 			justifyContent="center"
 			alignItems="center"
-			minH="70vh"
+			minH="55vh"
+			py="5%"
 		>
 			<Heading
 				as="h3"
 				size="2xl"
 				mb="3"
+				pt={notSmallerScreen ? "2" : "10%"}
 				textTransform="uppercase"
 				textAlign="center"
 			>
@@ -26,7 +30,13 @@ export default function About() {
 					backgroundColor: "#acb7fb",
 				}}
 			></div>
-			<Text mt="10" fontSize="large" color="gray.600" px="20%">
+
+			<Text
+				mt="10"
+				fontSize="large"
+				color="gray.600"
+				px={notSmallerScreen ? "18%" : "10%"}
+			>
 				Carpalar is a genuine and notable digital car leasing brand that
 				aims at ensuring ownership of automobiles in the most convenient
 				way. Simply refer to Carpalar as a financial technology brand
