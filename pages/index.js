@@ -8,6 +8,7 @@ import Howitworks from "../components/Howitworks";
 import InfoSection from "../components/InfoSection";
 import Reviews from "../components/Reviews";
 import Search from "../components/Search";
+import Whycarpalar from "../components/Whycarpalar";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
 			<Explore />
 			<About />
 			<Reviews />
+			<Whycarpalar />
 		</>
 	);
 }

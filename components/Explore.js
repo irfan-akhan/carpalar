@@ -12,13 +12,12 @@ import ExploreCard from "./ExploreCard";
 export default function Explore() {
 	const [notSmallerScreen] = useMediaQuery("(min-width:768px)");
 	return (
-		<Box bgColor="black" pb="20">
+		<Box pb="20">
 			<Flex
 				alignItems="center"
 				p="10"
 				flexDir="column"
 				textAlign="center"
-				color="#fff"
 				pb="20"
 			>
 				<Heading as="h1" textTransform="uppercase" fontSize="40">
@@ -46,9 +45,11 @@ export default function Explore() {
 
 			<Flex
 				mt="-4"
-				justifyContent="space-evenly"
+				justifyContent="center"
 				alignItems="center"
 				flexWrap="wrap"
+				width="80vw"
+				margin="auto"
 			>
 				<ExploreCard />
 				<ExploreCard />

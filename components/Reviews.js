@@ -4,7 +4,7 @@ import React from "react";
 import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/react";
 
 export default function Reviews() {
-	const [notSmallerScreen] = useMediaQuery("(min-width:768px)");
+	const [notSmallerScreen] = useMediaQuery("(max-width:768px)");
 
 	return (
 		<Box
@@ -12,10 +12,12 @@ export default function Reviews() {
 			display="flex"
 			flexDirection="column"
 			alignItems="center"
+			justifyContent="center"
 			p="7%"
 			color="white"
 			bg="black"
-			minH="85vh"
+			minH="90vh"
+			pb="60"
 		>
 			<Heading
 				color="#4258ef"
@@ -29,20 +31,21 @@ export default function Reviews() {
 			</Heading>
 
 			<Flex
-				maxW="70vw"
+				maxW="80vw"
 				color="black"
-				justifyContent="center"
-				flexDir={notSmallerScreen ? "row" : "column"}
+				// justifyContent="space-evenly"
+				flexDir={notSmallerScreen ? "column" : "row"}
 			>
 				<Flex
-					width={notSmallerScreen ? "25%" : "100%"}
-					height={notSmallerScreen ? "40vh" : "fit-content"}
+					width={notSmallerScreen ? "100%" : "25vw"}
+					height={notSmallerScreen ? "fit-content" : "40vh"}
 					mt="10"
 					bg="white"
 					borderRadius="5"
 					p="5"
 					flexDir="column"
 					alignItems="flex-start"
+					m="4"
 				>
 					<Flex alignItems="center">
 						<Avatar
@@ -50,7 +53,7 @@ export default function Reviews() {
 							name="Segun Adebayo"
 							src="/profile/man2.png"
 						/>
-						<Box ml="5" w={notSmallerScreen ? "60%" : "90%"}>
+						<Box ml="5" w={notSmallerScreen ? "90%" : "60%"}>
 							<Text>Mr Khan</Text>
 						</Box>
 					</Flex>
@@ -65,23 +68,24 @@ export default function Reviews() {
 					</Text>
 				</Flex>
 				<Flex
-					width={notSmallerScreen ? "25%" : "100%"}
-					height={notSmallerScreen ? "40vh" : "fit-content"}
+					width={notSmallerScreen ? "100%" : "25vw"}
+					height={notSmallerScreen ? "fit-content" : "40vh"}
 					mt="10"
 					bg="white"
 					borderRadius="5"
 					p="5"
 					flexDir="column"
 					alignItems="flex-start"
+					m="4"
 				>
 					<Flex alignItems="center">
 						<Avatar
 							size="lg"
 							name="Segun Adebayo"
-							src="/profile/woman.png"
+							src="/profile/man2.png"
 						/>
-						<Box ml="5" width={notSmallerScreen ? "25%" : "100%"}>
-							<Text>Mr Tunde Ojobaro</Text>
+						<Box ml="5" w={notSmallerScreen ? "90%" : "60%"}>
+							<Text>Mr Khan</Text>
 						</Box>
 					</Flex>
 					<Text
@@ -95,23 +99,24 @@ export default function Reviews() {
 					</Text>
 				</Flex>
 				<Flex
+					width={notSmallerScreen ? "100%" : "25vw"}
+					height={notSmallerScreen ? "fit-content" : "40vh"}
 					mt="10"
-					width={notSmallerScreen ? "25%" : "100%"}
-					height={notSmallerScreen ? "40vh" : "fit-content"}
 					bg="white"
 					borderRadius="5"
 					p="5"
 					flexDir="column"
 					alignItems="flex-start"
+					m="4"
 				>
 					<Flex alignItems="center">
 						<Avatar
 							size="lg"
 							name="Segun Adebayo"
-							src="/profile/man1.png"
+							src="/profile/man2.png"
 						/>
-						<Box ml="5" width={notSmallerScreen ? "60%" : "90%"}>
-							<Text>Mr Tunde Ojobaro</Text>
+						<Box ml="5" w={notSmallerScreen ? "90%" : "60%"}>
+							<Text>Mr Khan</Text>
 						</Box>
 					</Flex>
 					<Text
