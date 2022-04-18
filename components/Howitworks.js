@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import React from "react";
 import Image from "next/image";
 export default function Howitworks() {
-	const [notSmallerScreen] = useMediaQuery("(min-width:768px)");
+	const [notSmallerScreen] = useMediaQuery("(max-width:768px)");
 
 	return (
 		<Box
@@ -35,11 +35,11 @@ export default function Howitworks() {
 				color="black"
 				justifyContent="space-between"
 				textAlign="center"
-				flexDir={notSmallerScreen ? "row" : "column"}
+				flexDir={notSmallerScreen ? "column" : "row"}
 			>
 				<Box
-					width={notSmallerScreen ? "25%" : "100%"}
-					mb={notSmallerScreen ? "inherit" : "20"}
+					width={notSmallerScreen ? "100%" : "25%"}
+					mb={notSmallerScreen ? "20" : "inherit"}
 				>
 					<Image
 						mb="40"
@@ -69,8 +69,8 @@ export default function Howitworks() {
 					</Flex>
 				</Box>
 				<Box
-					width={notSmallerScreen ? "25%" : "100%"}
-					mb={notSmallerScreen ? "inherit" : "20"}
+					width={notSmallerScreen ? "100%" : "25%"}
+					mb={notSmallerScreen ? "20" : "inherit"}
 				>
 					<Image
 						mb="40"
@@ -84,7 +84,7 @@ export default function Howitworks() {
 						p="10"
 						bg="white"
 						flexDir="column"
-						minH={notSmallerScreen ? "50vh" : "35vh"}
+						minH={notSmallerScreen ? "35vh" : "50vh"}
 						alignItems="center"
 					>
 						<Image
@@ -100,8 +100,8 @@ export default function Howitworks() {
 					</Flex>
 				</Box>
 				<Box
-					width={notSmallerScreen ? "25%" : "100%"}
-					mb={notSmallerScreen ? "inherit" : "20"}
+					width={notSmallerScreen ? "100%" : "25%"}
+					mb={notSmallerScreen ? "20" : "inherit"}
 				>
 					<Image
 						mb="40"
@@ -116,7 +116,7 @@ export default function Howitworks() {
 						bg="white"
 						flexDir="column"
 						alignItems="center"
-						minH={notSmallerScreen ? "50vh" : "35vh"}
+						minH={notSmallerScreen ? "35vh" : "50vh"}
 					>
 						<Image
 							mb="40"

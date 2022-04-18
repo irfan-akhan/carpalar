@@ -59,16 +59,16 @@ export default function Explore() {
 				<ExploreCard />
 				<ExploreCard />
 				<ExploreCard />
-
-				<Button
-					mt="10"
-					textAlign="center"
-					variant="solid"
-					className="primaryButton"
-				>
-					SHOW MORE
-				</Button>
 			</Flex>
+			<Button
+				margin="auto"
+				mt="10"
+				textAlign="center"
+				variant="solid"
+				className="primaryButton"
+			>
+				SHOW MORE
+			</Button>
 		</Box>
 	);
 }

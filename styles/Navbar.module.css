@@ -5,11 +5,13 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 2rem;
+	font-weight: bolder;
 }
 .logo {
 	font-size: 1.5rem;
 	font-weight: bold;
 	text-transform: capitalize;
+	font-weight: bolder;
 	color: #4258ef;
 }
 
@@ -18,10 +20,12 @@
 	list-style: none;
 	display: flex;
 	justify-content: center;
+	font-weight: bolder;
 	align-items: center;
 }
 .list {
 	padding: 0 1rem;
+	font-weight: bolder;
 	font-weight: 400;
 	font-size: 1.2rem;
 	text-transform: capitalize;
